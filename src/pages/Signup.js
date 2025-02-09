@@ -12,7 +12,7 @@ const Signup = ({ setAuth }) => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/signup", { // ✅ Fixed API URL
+      const res = await axios.post("http://localhost:5000/api/signup", { // ✅ Fixed API URL
         username,
         email,
         password,
